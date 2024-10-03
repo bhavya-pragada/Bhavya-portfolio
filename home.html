@@ -1,42 +1,31 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Homepage</title>
-        <link rel="stylesheet" href="CSS/home.css">
-        <style>
-            .container{
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            }
-            .image-content {
-            text-align: right;
-        }
-
-        #profile-pic {
-            border-radius: 50%;
-            width: 350px;
-            border: 5px solid #fdfdfd; 
-        }
-
-        </style>
-    </head>
-    <body>
-        <div id="container">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="CSS/home.css">
+</head>
+<body>
+    <div id="container">
+        <div class="welcome-section">
             <div>
                 <h1 class="heading">WELCOME TO MY PORTFOLIO</h1>
-                <p class="description">
-                    Motivated B.Tech student with a passion for seeking
- opportunities to apply and enhance technical skills while
- contributing to innovative projects and learning from
- experienced professionals.
-                </p>
+                <p class="description">Explore my work and achievements by navigating through the site!</p>
             </div>
-            <div class="know-abt">
-                <button class="login" onclick="window.location.href='login.html'"> Login </button>
-                <button class="register" onclick="window.location.href='Contact/index.html'"> Contact Me </button>
-            </div>
-            <div class="image-content">
-                <img id="profile-pic" src="Bhavya_image.jpg" alt="Bhavya">
+            <div class="buttons">
+                <button class="login" onclick="window.location.href='login.html'">Login</button>
+                <button class="register" onclick="window.location.href='Contact/index.html'">Contact Me</button>
             </div>
         </div>
-    </body>
+
+        <!-- Image and About Me Section -->
+        <div class="image-container">
+            <img src="Bhavya_Photo.jpeg" alt="Profile Image" class="profile-image">
+            <div class="about-me">
+                <p>Graduated from Amrita University, specialised in Artificial Intelligence. I love working on machine learning, Generative AI, and AI-powered projects. Have a walkthrough by logging in ..... </p>
+            </div>
+        </div>
+    </div>
+</body>
 </html>

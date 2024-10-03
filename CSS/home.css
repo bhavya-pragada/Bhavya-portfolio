@@ -1,0 +1,117 @@
+/* Setting the background color to black */
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container with background image and layout properties */
+#container {
+    background-size: cover;
+    min-height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+    position: relative;  /* For positioning the lines on the right side */
+}
+
+/* Pseudo-elements for vertical lines on the right side */
+body::before, body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 50px;
+    width: 15px;
+    height: 100vh;
+    background-color: white; /* Line color */
+}
+
+body::after {
+    right: 120px; /* Second line slightly to the left of the first one */
+}
+
+/* Flex container for the welcome section */
+.welcome-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px; /* To give space between welcome section and the rest */
+}
+
+/* Heading style */
+.heading {
+    font-family: "Roboto";
+    font-size: 33px;
+    color: #ffffff;
+    font-weight: 800;
+    margin-right: 20px; /* To space the heading from the buttons */
+}
+
+/* Description paragraph */
+.description {
+    font-family: "Roboto";
+    font-size: 20px;
+    color: #ffffff;
+    max-width: 30vw;
+}
+
+/* Styling the image container and about me section */
+.image-container {
+    position: absolute;
+    bottom: 200px;
+    left: 40px;
+    display: flex;
+    align-items: center;
+}
+
+/* Styling for profile image */
+.profile-image {
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+/* Styling for about me text */
+.about-me {
+    color: #fff;
+    max-width: 500px;
+    font-size: 16px;
+}
+
+/* Buttons container for login and contact */
+.buttons {
+    display: flex;
+    gap: 10px; /* Adds space between the two buttons */
+}
+
+/* Style for login button */
+.login {
+    height: 36px;
+    width: 138px;
+    background-color: #25b1cc;
+    color: white;
+    border-radius: 20px;
+    border-width: 0px;
+    font-weight: bold;
+    margin-right: 100px;
+    cursor: pointer;
+}
+
+/* Style for contact button */
+.register {
+    height: 36px;
+    width: 138px;
+    background-color: #25b1cc;
+    color: white;
+    border-radius: 20px;
+    border-width: 0px;
+    font-weight: bold;
+    margin-right: 150px;
+    cursor: pointer;
+}
+
+

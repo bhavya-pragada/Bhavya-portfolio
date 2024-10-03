@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Bhavya Pragada</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external stylesheet -->
+    <style>
+        body {
+            background-color: #e3f2fd; /* Light blue background */
+            color: #000;
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            display: flex;
+            flex-direction: row; /* Side by side layout */
+        }
+
+        /* Sidebar for navigation links */
+        .sidebar {
+            width: 400px; /* Fixed width for sidebar */
+            padding: 20px;
+            background-color: #0d47a1; /* Dark blue background */
+            color: white;
+            height: 100vh; /* Full height */
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+            display: flex;
+            flex-direction: column; /* Arrange links vertically */
+        }
+
+        /* Title in sidebar */
+        .sidebar h1 {
+            font-size: 1.5em; /* Smaller title */
+            color: white;
+            margin-bottom: 20px;
+            text-align: center; /* Center align */
+            font-family: 'Times New Roman', serif;
+        }
+
+        /* Links styling */
+        .link-box {
+            background-color: #0d47a1; /* Dark blue box color */
+            color: white;
+            padding: 15px; /* Reduced padding for smaller buttons */
+            border-radius: 10px; /* Adjusted border radius */
+            text-decoration: none;
+            font-size: 1em; /* Smaller font size */
+            margin: 10px 0; /* Vertical margin */
+            text-align: center;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Hover effect for links */
+        .link-box:hover {
+            background-color: #0b3d91; /* Darker blue */
+        }
+
+        /* Main content area */
+        .main-content {
+            flex-grow: 1; /* Fill the remaining space */
+            padding: 20px; /* Add padding for content */
+            text-align: center; /* Center align text in main area */
+        }
+
+        h1 {
+            color: #0d47a1; /* Dark blue color */
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid layout */
+            gap: 10px; /* Space between items */
+            margin: 20px 0; /* Margin above and below the gallery */
+        }
+
+        .gallery-item {
+            background-color: #fff; /* White background for each item */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            overflow: hidden; /* Ensures the image is clipped */
+        }
+
+        .gallery-item img {
+            width: 100%; /* Full width of the item */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .gallery-item h3 {
+            margin: 10px; /* Margin for the title */
+            font-size: 1.2em; /* Title font size */
+            color: #0d47a1; /* Dark blue color */
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #0d47a1; /* Dark blue color */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h1>Dashboard</h1>
+        <a href="Academics.html" class="link-box">Academics</a>
+        <a href="Projects.html" class="link-box">Projects</a>
+        <a href="personal.html" class="link-box">Personal</a>
+        <a href="gallery.html" class="link-box">Gallery</a>
+        <a href="Todo.html" class="link-box">My Todo List</a>
+    </div>
+
+    <div class="main-content">
+        <h1>Gallery</h1>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="achv1.png" alt="Certificate 1">
+                <h3>OCI Generative AI Professional Certification</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="achv2.png" alt="Certificate 2">
+                <h3>Databricks Accredited Generative AI Fundamentals</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="achv3.png" alt="Certificate 3">
+                <h3>Microsoft Certified Azure Fundamentals</h3>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2024 Bhavya Pragada. All rights reserved.</p>
+        </footer>
+    </div>
+    
+</body>
+
+</html>

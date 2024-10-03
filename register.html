@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <style>
+        /* General page styling */
+        body {
+            background-color: #e3f2fd; /* Light blue background color */
+            color: #000;
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .register-container {
+            background-color: #000; /* Black background for the form */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #fff; /* White color */
+            text-align: center;
+            font-family: 'Times New Roman', serif;
+        }
+
+        label {
+            font-size: 1em;
+            color: #b3e5fc; /* Light blue color */
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #b3e5fc; /* Light blue border */
+            border-radius: 5px;
+            background-color: #333; /* Dark grey background */
+            color: #fff;
+            font-family: 'Times New Roman', serif;
+        }
+
+        .register-btn {
+            background-color: #03a9f4; /* Light blue background */
+            color: white;
+            padding: 13px 10px;
+            border: 2px solid #fff; /* White border */
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1em;
+            width: 100%;
+            text-align: center;
+            display: block;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            font-family: 'Times New Roman', serif;
+        }
+
+        .register-btn:hover {
+            background-color: #0288d1; /* Darker blue on hover */
+        }
+
+        .back-link {
+            margin-top: 20px;
+            display: block;
+            text-align: center;
+            color: #b3e5fc; /* Light blue color */
+            text-decoration: none;
+            font-family: 'Times New Roman', serif;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        #passwordStrength {
+            height: 10px;
+            margin-top: 5px;
+            width: 100%;
+            background-color: transparent;
+        }
+
+        .strength-message {
+            color: #fff;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="register-container">
+        <h1>Register</h1>
+        <form action="dashboard.html" method="POST">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Choose a username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Choose a password" required onkeyup="checkPasswordStrength()">
+            <div id="passwordStrength"></div>
+            <div id="strengthMessage" class="strength-message"></div>
+
+            <button type="submit" class="register-btn">Register</button>
+        </form>
+        <a href="home.html" class="back-link">Back to Home</a>
+    </div>
+
+    <script>
+        function checkPasswordStrength() {
+            const password = document.getElementById('password').value;
+            const strengthBar = document.getElementById('passwordStrength');
+            const strengthMessage = document.getElementById('strengthMessage');
+
+            let strength = 0;
+            if (password.length > 5) strength++;
+            if (/[A-Z]/.test(password)) strength++;
+            if (/[0-9]/.test(password)) strength++;
+            if (/[\W]/.test(password)) strength++;
+
+            strengthBar.style.backgroundColor = getStrengthColor(strength);
+            strengthMessage.textContent = getStrengthMessage(strength);
+        }
+
+        function getStrengthColor(strength) {
+            switch (strength) {
+                case 0: return 'transparent';
+                case 1: return 'red';
+                case 2: return 'red';
+                case 3: return 'yellow';
+                case 4: return 'green';
+                default: return 'transparent';
+            }
+        }
+
+        function getStrengthMessage(strength) {
+            switch (strength) {
+                case 0: return '';
+                case 1: return 'Not strong';
+                case 2: return 'Not strong';
+                case 3: return 'Poor';
+                case 4: return 'Very good';
+                default: return '';
+            }
+        }
+    </script>
+</body>
+
+</html>

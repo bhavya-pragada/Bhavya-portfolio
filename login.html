@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <style>
+        
+        body {
+            background-color: #000000; 
+            color: #fff;
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: #1976d2; 
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #fff; 
+            text-align: center;
+            font-family: 'Times New Roman', serif;
+        }
+
+        label {
+            font-size: 1em;
+            color: #e3f2fd; 
+            display: block;
+            margin-bottom: 10px;
+            font-family: 'Times New Roman', serif;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #1565c0; 
+            border-radius: 5px;
+            background-color: #0d47a1; 
+            color: #fff;
+            font-family: 'Times New Roman', serif;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .button {
+            background-color: transparent; 
+            color: #fff;
+            padding: 13px 10px;
+            border: 2px solid #fff; 
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1em;
+            width: 48%; 
+            text-align: center;
+            display: block;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            font-family: 'Times New Roman', serif;
+        }
+
+        .button:hover {
+            background-color: #fff; 
+            color: #0d47a1; 
+        }
+
+        .back-link {
+            margin-top: 20px;
+            display: block;
+            text-align: center;
+            color: #e3f2fd; 
+            text-decoration: none;
+            font-family: 'Times New Roman', serif;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form action="dashboard.html" method="POST">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <div class="button-container">
+                <button type="submit" class="button">Login</button>
+                <a href="register.html" class="button">Register</a>
+            </div>
+        </form>
+        <a href="home.html" class="back-link">Back to Home</a>
+    </div>
+</body>
+
+</html>

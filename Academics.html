@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics</title>
+    <link rel="stylesheet" href="CSS/Academics.css">
+    <style>
+        /* General page styling */
+        body {
+            background-color: #e3f2fd; /* Light blue background */
+            color: #000;
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            display: flex;
+            flex-direction: row; /* Side by side layout */
+        }
+
+        /* Sidebar for navigation links */
+        .sidebar {
+            width: 250px; /* Fixed width for sidebar */
+            padding: 20px;
+            background-color: #0d47a1; /* Dark blue background */
+            color: white;
+            height: 100vh; /* Full height */
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+            display: flex;
+            flex-direction: column; /* Arrange links vertically */
+        }
+
+        /* Title in sidebar */
+        .sidebar h1 {
+            font-size: 1.5em; /* Smaller title */
+            margin-bottom: 20px;
+            text-align: center; /* Center align */
+            font-family: 'Times New Roman', serif;
+        }
+
+        /* Links styling */
+        .link-box {
+            background-color: #0d47a1; /* Dark blue box color */
+            color: white;
+            padding: 15px; /* Reduced padding for smaller buttons */
+            border-radius: 10px; /* Adjusted border radius */
+            text-decoration: none;
+            font-size: 1em; /* Smaller font size */
+            margin: 10px 0; /* Vertical margin */
+            text-align: center;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        /* Hover effect for links */
+        .link-box:hover {
+            background-color: #0b3d91; /* Darker blue */
+            transform: translateY(-3px); /* Slight lift effect */
+        }
+
+        /* Main content area */
+        .main-content {
+            flex-grow: 1; /* Fill the remaining space */
+            padding: 20px; /* Add padding for content */
+            text-align: center; /* Center align text in main area */
+        }
+
+        /* Education details styling */
+        .education-detail {
+            margin: 20px 0; /* Vertical spacing */
+            padding: 10px 0; /* Padding for each entry */
+        }
+
+        /* Divider styling */
+        .divider {
+            height: 2px; /* Height of the divider */
+            background-color: #0d47a1; /* Color of the divider */
+            margin: 20px 0; /* Spacing around the divider */
+            width: 75%; /* Width of the divider */
+            margin-left: auto; /* Center align the divider */
+            margin-right: auto; /* Center align the divider */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h1>Dashboard</h1>
+        <a href="Academics.html" class="link-box">Academics</a>
+        <a href="Projects.html" class="link-box">Projects</a>
+        <a href="personal.html" class="link-box">Personal</a>
+        <a href="gallery.html" class="link-box">Gallery</a>
+        <a href="Todo.html" class="link-box">My Todo List</a>
+    </div>
+    <div class="main-content">
+        <h1>Education Details</h1>
+        <div class="education-detail">
+            <h2>Amrita School of Engineering</h2>
+            <p>Course: B.Tech <br> Branch: Artificial Intelligence <br> CGPA: 8.82<br> Passing Out: 2025</p>
+        </div>
+        <div class="divider"></div>
+        <div class="education-detail">
+            <h2>Banglore City College</h2>
+            <p>Course: PUC <br> Branch: PCMB<br> Score: 96.5% <br> Passing Out: 2021</p>
+        </div>
+        <div class="divider"></div>
+        <div class="education-detail">
+            <h2>RBGS</h2>
+            <p>Course: 10<sup>th</sup> Class <br> Branch: CBSE <br> Score: 94.5% <br> Passing Out: 2019</p>
+        </div>
+    </div>
+</body>
+
+</html>

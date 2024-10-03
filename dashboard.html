@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        /* General page styling */
+        body {
+            background-color: #e3f2fd; /* Light blue background color */
+            color: #000;
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row; /* Change to row to position links on the left */
+            align-items: flex-start; /* Align items at the top */
+            height: 100vh;
+        }
+
+        /* Sidebar for links */
+        .sidebar {
+            width: 250px; /* Fixed width for sidebar */
+            padding: 20px;
+            background-color: #0d47a1; /* Dark blue background */
+            color: white;
+            height: 100%; /* Full height */
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+            display: flex;
+            flex-direction: column; /* Arrange links vertically */
+        }
+
+        /* Title in sidebar */
+        .sidebar h1 {
+            font-size: 1.5em; /* Smaller title */
+            margin-bottom: 20px;
+            text-align: center; /* Center align */
+            font-family: 'Times New Roman', serif;
+        }
+
+        /* Links styling */
+        .link-box {
+            background-color: #0d47a1; /* Dark blue box color */
+            color: white;
+            padding: 15px; /* Reduced padding for smaller buttons */
+            border-radius: 10px; /* Adjusted border radius */
+            text-decoration: none;
+            font-size: 1em; /* Smaller font size */
+            margin: 10px 0; /* Vertical margin */
+            text-align: center;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Hover effect for links */
+        .link-box:hover {
+            background-color: #0b3d91; /* Darker blue */
+            transform: translateY(-3px); /* Slight lift effect */
+        }
+
+        /* Main content area */
+        .main-content {
+            flex-grow: 1; /* Fill the remaining space */
+            padding: 20px; /* Add padding for content */
+            text-align: center; /* Center align text in main area */
+            display: flex;
+            flex-direction: column; /* Vertical stacking */
+            justify-content: flex-start; /* Align items to the top */
+            align-items: center; /* Center the content horizontally */
+        }
+
+        /* Welcome message */
+        .main-content h2 {
+            font-size: 2.5em;
+            color: #0d47a1; /* Dark blue color */
+            margin-bottom: 10px;
+        }
+
+        /* Smaller secondary message */
+        .main-content h3 {
+            font-size: 1.2em; /* Smaller font size */
+            color: #0d47a1; /* Dark blue color */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h1>Dashboard</h1>
+        <a href="Academics.html" class="link-box">Academics</a>
+        <a href="Projects.html" class="link-box">Projects</a>
+        <a href="personal.html" class="link-box">Personal</a>
+        <a href="gallery.html" class="link-box">Gallery</a>
+        <a href="Todo.html" class="link-box">My Todo List</a>
+    </div>
+    <div class="main-content">
+        <h2>Welcome to Your Dashboard!</h2>
+        <h3>Select an option from the left to get started.</h3>
+        <footer>
+            <p>&copy; 2024 Bhavya Pragada. All rights reserved.</p>
+        </footer>
+    </div>
+    
+</body>
+
+</html>

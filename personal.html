@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information - Nara Sumanth Reddy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external stylesheet -->
+    <style>
+        body {
+            background-color: #e3f2fd; /* Light blue background */
+            color: #000;
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            display: flex;
+            flex-direction: row; /* Side by side layout */
+        }
+
+        /* Sidebar for navigation links */
+        .sidebar {
+            width: 250px; /* Fixed width for sidebar */
+            padding: 20px;
+            background-color: #0d47a1; /* Dark blue background */
+            color: white;
+            height: 100vh; /* Full height */
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+            display: flex;
+            flex-direction: column; /* Arrange links vertically */
+        }
+
+        /* Title in sidebar */
+        .sidebar h1 {
+            font-size: 1.5em; /* Smaller title */
+            color: white;
+            margin-bottom: 20px;
+            text-align: center; /* Center align */
+            font-family: 'Times New Roman', serif;
+        }
+
+        /* Links styling */
+        .link-box {
+            background-color: #0d47a1; /* Dark blue box color */
+            color: white;
+            padding: 15px; /* Reduced padding for smaller buttons */
+            border-radius: 10px; /* Adjusted border radius */
+            text-decoration: none;
+            font-size: 1em; /* Smaller font size */
+            margin: 10px 0; /* Vertical margin */
+            text-align: center;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Hover effect for links */
+        .link-box:hover {
+            background-color: #0b3d91; /* Darker blue */
+        }
+
+        /* Main content area */
+        .main-content {
+            flex-grow: 1; /* Fill the remaining space */
+            padding: 20px; /* Add padding for content */
+            text-align: center; /* Center align text in main area */
+        }
+
+        h1 {
+            color: #0d47a1; /* Dark blue color */
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        }
+
+        .personal-info {
+            background-color: #fff; /* White background for the info box */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            margin: 0 auto; /* Center align */
+            width: 80%; /* Width of the info box */
+        }
+
+        .info-item {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+
+        .info-label {
+            font-weight: bold;
+            color: #0d47a1; /* Dark blue color */
+        }
+
+        .info-value {
+            color: #000; /* Black color for values */
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #0d47a1; /* Dark blue color */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h1>Dashboard</h1>
+        <a href="Academics.html" class="link-box">Academics</a>
+        <a href="Projects.html" class="link-box">Projects</a>
+        <a href="personal.html" class="link-box">Personal</a>
+        <a href="gallery.html" class="link-box">Gallery</a>
+        <a href="Todo.html" class="link-box">My Todo List</a>
+    </div>
+    <div class="main-content">
+        <h1>Personal Information</h1>
+
+        <div class="personal-info">
+            <div class="info-item">
+                <span class="info-label">GitHub:</span> <a href="https://github.com/bhavya-pragada?tab=repositories" target="_blank" class="info-value">Bhavya-Pragada</a>
+            </div>
+            <div class="info-item">
+                <span class="info-label">LinkedIn:</span> <a href="https://www.linkedin.com/in/bhavya-sri-pragada-057925238/" target="_blank" class="info-value">BhavyaPragada</a>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Phone Number:</span> <span class="info-value">74836*****</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Email:</span> <a href="mailto:bhavyasri.pragada@gmail.com" class="info-value">bhavyasri.pragada@gmail.com</a>
+            </div>
+    
+            <div class="info-item">
+                <span class="info-label">Place:</span> <span class="info-value">Bangalore</span>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Bhavya Pragada. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
